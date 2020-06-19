@@ -65,3 +65,4 @@ yarn.lock
 .idea
 core
 plugins
+*:Zone.Identifier
