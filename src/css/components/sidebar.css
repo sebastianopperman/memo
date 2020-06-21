@@ -1,0 +1,30 @@
+.sidebar {
+  padding: 2em;
+  background: var(--mystic);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media(--lg) {
+    padding: 4em 3em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    width: 10em;
+    display: block;
+    @media(--lg) {
+      width: 8em;
+      transition: all .5s ease;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  @media(--lg) {
+    width: 20vw;
+    height: 100vh;
+  }
+  @media(--xl) {
+    width: 16vw;
+  }
+}

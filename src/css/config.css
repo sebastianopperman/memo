@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://use.typekit.net/bft1zuu.css");
 
 @custom-media --sm (min-width: 480px);
 @custom-media --md (min-width: 768px);
@@ -6,22 +6,17 @@
 @custom-media --xl (min-width: 1440px);
 
 :root {
-	--mercury: #e5e5e5;
-	--oxford: #364653;
-	--wedge: #5482ab;
-	--curious: #1A93D7;
-	--teal: #054d53;
-	--elm: #19938e;
-	--persian: #70181f;
-	--cinnebar: #EA3837;
-	--kumera: #936e28;
-	--sunglow: #ffbc38;
-	--violet: #2f1545;
-	--tapestry: #9e478e;
+	--night: #091420;
+	--royal: #423CEC;
+	--malibu: #5F6BFF;
+	--clay: #a9acbc;
+	--haze: #D3D6E6;
+	--cement: #e8e9ed;
+	--mystic: #F1F3F8;
 }
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
   
 html {
@@ -33,27 +28,15 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-size: 16px;
 	line-height: 1.6;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Proxima Nova', sans-serif;
 	scroll-behavior: smooth;
+	color: var(--night);
+	@media(--lg) {
+		display: flex;
+	}
 }
 
-button {
-	outline: none;
-}
-
-picture, img {
+img {
 	display: block;
 	max-width: 100%;
-}
-
-figure {
-	margin: 0;
-}
-
-*[class$=-inner] {
-	padding: 0 1em;
-	margin: 0 auto;
-	@media(--md) {
-			max-width: 80%;
-	}
 }

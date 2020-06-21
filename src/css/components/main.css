@@ -1,0 +1,16 @@
+main {
+	width: 100%;
+	padding: 2em;
+	@media(--md) {
+		padding: 3em;
+	}
+  @media(--lg) {
+    width: 80vw;
+		height: 100vh;
+		overflow: hidden;
+  }
+	@media(--xl) {
+		padding: 4em 3em;
+    width: 85vw;
+  }
+}
