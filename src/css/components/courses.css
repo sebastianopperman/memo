@@ -19,6 +19,9 @@
       flex-direction: column;
       justify-content: space-between;
     }
+    &.hide {
+      display: none;
+    }
     &:not(:last-child) {
       position: relative;
       margin-bottom: 4em;
@@ -49,6 +52,9 @@
       color: var(--cement);
       @media(--lg) {
         font-size: 3em;
+      }
+      @media(min-width: 1560px) {
+        font-size: 4em;
       }
     }
     &-title {

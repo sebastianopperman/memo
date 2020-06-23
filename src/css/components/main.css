@@ -1,6 +1,9 @@
 main {
 	width: 100%;
 	padding: 2em;
+	opacity: 0;
+	visibility: hidden;
+	animation: fade 1s forwards cubic-bezier(0.33, 1, 0.68, 1);
 	@media(--md) {
 		padding: 3em;
 	}

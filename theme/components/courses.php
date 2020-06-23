@@ -8,7 +8,7 @@
   <?php if($courses->have_posts()): ?>
   <div class="list">
     <?php while($courses->have_posts()): $courses->the_post(); ?>
-    <div class="course">
+    <div class="course" data-filter="<?php echo $category = get_the_terms( get_the_ID(), 'course_status' )[0]->slug ?>">
       <div class="course-month">
         <?php echo get_the_date( 'M' ); ?>
       </div>

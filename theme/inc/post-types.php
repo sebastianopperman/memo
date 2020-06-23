@@ -79,7 +79,6 @@ function postTypes() {
       'hierarchical' => true,
       'menu_icon' => 'dashicons-groups',
       'has_archive' => true,
-      'show_in_rest' => true,
       'capability_type' => 'post',
       'supports' => array('title', 'editor'),
       'rewrite'=> array( 'slug' => 'groups' )
@@ -100,7 +99,6 @@ function postTypes() {
       'hierarchical' => true,
       'menu_icon' => 'dashicons-welcome-learn-more',
       'has_archive' => true,
-      'show_in_rest' => true,
       'capability_type' => 'post',
       'supports' => array('title', 'editor'),
       'rewrite'=> array( 'slug' => 'students' )
