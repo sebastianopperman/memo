@@ -79,7 +79,7 @@ function postTypes() {
       'hierarchical' => true,
       'menu_icon' => 'dashicons-groups',
       'has_archive' => true,
-      'capability_type' => 'post',
+      'capability_type' => 'page',
       'supports' => array('title', 'editor', 'thumbnail'),
       'rewrite'=> array( 'slug' => 'groups' )
     )
@@ -99,7 +99,7 @@ function postTypes() {
       'hierarchical' => true,
       'menu_icon' => 'dashicons-welcome-learn-more',
       'has_archive' => true,
-      'capability_type' => 'post',
+      'capability_type' => 'page',
       'supports' => array('title', 'editor', 'thumbnail'),
       'rewrite'=> array( 'slug' => 'students' )
     )
@@ -120,7 +120,7 @@ function postTypes() {
       'menu_icon' => 'dashicons-media-document',
       'has_archive' => true,
       'show_in_rest' => true,
-      'capability_type' => 'post',
+      'capability_type' => 'page',
       'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
       'rewrite'=> array( 'slug' => 'news' )
     )
