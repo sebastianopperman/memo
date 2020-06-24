@@ -4,7 +4,7 @@
 ![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/gutenberg)
 
 Memo is a WordPress & React assessment task. To access the WordPress, use the following login:
-Website: [178.62.107.86](http://178.62.107.86/)
+Website: [178.62.107.86](http://178.62.107.86/)<br />
 Username: **Memo**<br />
 Password: **Memo**
 
