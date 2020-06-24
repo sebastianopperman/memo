@@ -5,23 +5,19 @@
   ]);?>
   <article>
     <select>
-      <option value="all" selected>All</option>
+      <option value="all">All</option>
       <?php foreach($items as $item): ?>
         <option value="<?php echo $item->slug ?>"><?php echo $item->name ?></option>
       <?php endforeach; ?>
     </select>
   </article>
   <ul>
-    <li class="active">
-      <a href="all">
-        All
-      </a>
+    <li data-filter="all" class="active">
+      All
     </li>
     <?php foreach($items as $item): ?>
-      <li>
-        <a href="<?php echo $item->slug ?>">
-          <?php echo $item->name ?>
-        </a>
+      <li data-filter="<?php echo $item->slug ?>">
+        <?php echo $item->name ?>
       </li>
     <?php endforeach; ?>
   </ul>

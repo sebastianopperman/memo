@@ -12,7 +12,7 @@ function add_scripts(){
   wp_deregister_script('wp-embed');
   wp_deregister_script('embed');
   wp_enqueue_script('bundle', get_template_directory_uri() . '/dist/js/bundle.js', array(), '1.0.1', true);
-  wp_localize_script( 'bundle', 'BlogInfo', array('url' => get_bloginfo('template_directory').'/', 'site' => get_bloginfo('wpurl'), 'ajax_url' => admin_url( 'admin-ajax.php' )));
+  wp_localize_script( 'bundle', 'WordPress', array('site' => get_bloginfo('wpurl')));
 }
 add_action('wp_enqueue_scripts', 'add_scripts');
 

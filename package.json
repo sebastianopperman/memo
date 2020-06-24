@@ -13,7 +13,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-runtime": "^7.10.3",
     "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.10.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.2",
     "babel-preset-env": "^1.7.0",
@@ -40,8 +42,12 @@
     "webpack-dev-server": "^3.1.8"
   },
   "dependencies": {
+    "@babel/runtime": "^7.10.3",
     "imagemin-webpack-plugin": "^2.4.2",
     "jquery": "^3.5.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.1",
+    "react-cache": "^2.0.0-alpha.1",
+    "react-dom": "^16.13.1"
   }
 }

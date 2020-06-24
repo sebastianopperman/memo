@@ -101,7 +101,10 @@
         a {
           margin: 0.75em 0;
           font-size: 1em;
-          transition: color .25s ease;
+          transition: all .5s ease;
+          &:hover {
+            opacity: 1;
+          }
         }
         &.current-menu-item {
           &:before {

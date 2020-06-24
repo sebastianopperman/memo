@@ -1,34 +1,35 @@
 import $ from 'jquery';
 
-(() => {
-	const filter = document.querySelector('.filter'),
-				mq = window.matchMedia('(min-width:768px)');
-
-	function filterCourses(status) {
-		if(status == 'all') {
-			$('.course').removeClass('hide');
-		} else {
-			const courses = $('.course').filter((i, course) => course.getAttribute('data-filter') == status);
-			$('.course').addClass('hide');
-			courses.removeClass('hide');
-		}
+function filterCourses(status, list) {
+	document.querySelector('.list').innerHTML = list.innerHTML;
+	if(status !== 'all') {
+		const courses = $('.course').filter((i, course) => course.getAttribute('data-filter') == status);
+		$('.list').empty().append(courses);
 	}
-	
+}
+
+export function filterEvents() {
+	const filter = document.querySelector('.filter');
 	if(filter) {
-		if(mq.matches) {
-			filter.querySelectorAll('ul a').forEach(item => {
+		const list = document.querySelector('.list').cloneNode(true);
+		if(filter.querySelector('ul')) {
+			filter.querySelectorAll('ul li').forEach(item => {
 				item.addEventListener('click', e => {
 					e.preventDefault();
 					filter.querySelectorAll('li').forEach(li => li.classList.remove('active'));
-					item.parentElement.classList.add('active');
-					filterCourses(item.getAttribute('href'));
+					item.classList.add('active');
+					filterCourses(item.getAttribute('data-filter'), list);
 				});
 			});
-		} else {
+		}
+		if(filter.querySelector('select')) {
 			const select = filter.querySelector('select');
 			select.addEventListener('change', () => {
-				filterCourses(select.value);
+				const select = filter.querySelector('select');
+				filterCourses(select.value, list);
 			});
 		}
 	}
-})();
+}
+
+filterEvents();

@@ -39,22 +39,18 @@
       list-style: none;
       margin: 0;
       padding: 0;
-      a {
-        text-decoration: none;
-        color: var(--night);
-        font-size: 1.125em;
-        margin-right: 3em;
-        opacity: 0.35;
-        transition: all .25s ease;
-        &:hover {
-          opacity: 0.8;
-        }
+      color: var(--night);
+      font-size: 1.125em;
+      margin-right: 3em;
+      opacity: 0.35;
+      transition: all .25s ease;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
       }
       &.active {
-        a {
-          font-weight: bold;
-          opacity: 0.8;
-        }
+        font-weight: bold;
+        opacity: 0.8;
       }
     }
   }

@@ -80,7 +80,7 @@ function postTypes() {
       'menu_icon' => 'dashicons-groups',
       'has_archive' => true,
       'capability_type' => 'post',
-      'supports' => array('title', 'editor'),
+      'supports' => array('title', 'editor', 'thumbnail'),
       'rewrite'=> array( 'slug' => 'groups' )
     )
   );
@@ -100,7 +100,7 @@ function postTypes() {
       'menu_icon' => 'dashicons-welcome-learn-more',
       'has_archive' => true,
       'capability_type' => 'post',
-      'supports' => array('title', 'editor'),
+      'supports' => array('title', 'editor', 'thumbnail'),
       'rewrite'=> array( 'slug' => 'students' )
     )
   );
@@ -121,8 +121,22 @@ function postTypes() {
       'has_archive' => true,
       'show_in_rest' => true,
       'capability_type' => 'post',
-      'supports' => array('title', 'editor'),
+      'supports' => array('title', 'editor', 'thumbnail', 'custom-fields'),
       'rewrite'=> array( 'slug' => 'news' )
+    )
+  );
+
+  register_taxonomy(
+    'news_topic',
+    'memo_news',
+    array(
+      'labels' => array(
+        'name' => __( 'Topics' ),
+        'add_new_item' => __('Add new Topic')
+      ),
+      'rewrite' => array( 'slug' => 'news-topics' ),
+      'hierarchical' => true,
+      'show_in_rest' => true,
     )
   );
 
