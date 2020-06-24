@@ -15,18 +15,15 @@ Password: **memo**
 
 - Install [Docker](https://www.docker.com/products/docker-desktop).
 - Run `yarn start` to set up WordPress locally.
-- Run `yarn start` to stop the WordPress containers.
-- Run `yarn dev` to start development.
-- Run `yarn build` to create a production distro.
+- Run `yarn stop` to stop the WordPress containers.
 - Access your WordPress at [localhost:8000](http://localhost:8000).
-- Access your Dev server at [localhost:3000](http://localhost:8000).
 - Activate the theme from the *Themes* section in the Admin Panel.
 
-### Setting up the Theme
-
-- Install dependancies - `npm install` or `yarn install`
-- Start **development** mode - `npm run dev` or `yarn dev`
-- Build a **production** distribution - `npm run build` or `yarn build`
+### Developing the Theme
+- Run `yarn install` to install dependancies
+- Run `yarn dev` to start the development server & watcher
+- Access your Dev server at [localhost:3000](http://localhost:3000).
+- Run `yarn build` to build a production theme distribution
 
 ## What's in the box?
 
