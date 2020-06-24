@@ -22,7 +22,7 @@ Password: **memo**
 ### Developing the Theme
 - Run `yarn install` to install dependancies
 - Run `yarn dev` to start the development server & watcher
-- Access your Dev server at [localhost:3000](http://localhost:3000).
+- Access your dev proxy server at [localhost:3000](http://localhost:3000).
 - Run `yarn build` to build a production theme distribution
 
 ## What's in the box?
