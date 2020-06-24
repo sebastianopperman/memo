@@ -22,7 +22,7 @@
         </div>
       <?php endwhile; ?>
     <?php else: ?>
-      <p><?php e_('There are no posts in this type.'); ?></p>
+      <p>There are no <?php post_type_archive_title(); ?> available.</p>
     <?php endif; ?>
   </article>
 </main>

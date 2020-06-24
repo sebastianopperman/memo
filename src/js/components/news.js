@@ -16,6 +16,7 @@ const News = () => {
 	return (
 		<div className="posts">
 			{posts && posts.map((post, k) => <Post key={k} {...post} />)}
+			{!posts.length && <p>There are no News available.</p>}
 		</div>
 	)
 }

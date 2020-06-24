@@ -36,6 +36,6 @@
     <?php endwhile; ?>
   </div>
   <?php else: ?>
-  <p><?php _e( 'There are no courses in this criteria.' ); ?></p>
+  <p><?php _e( 'There are no Courses available.' ); ?></p>
   <?php endif; ?>
 </section>
