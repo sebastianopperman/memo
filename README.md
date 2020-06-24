@@ -1,11 +1,13 @@
 # WordPress Theme Boilerplate
+![Deploy](https://github.com/magn3tic/is3/workflows/Deploy/badge.svg)
 [![GitHub license](https://img.shields.io/github/license/codilation/wordpress-theme-boilerplate)](https://github.com/codiltion/wordpress-theme-boilerplate/blob/master/LICENSE)
 ![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/gutenberg)
 
 Memo is a WordPress & React assessment task. To access the WordPress, use the following login:
 
-Username: **Memo**<br />
-Password: **Memo**
+[WordPress Admin](http://178.62.107.86/wp-admin)<br />
+Username: **memo**<br />
+Password: **memo**
 
 ## How do I use it?
 
@@ -13,17 +15,15 @@ Password: **Memo**
 
 - Install [Docker](https://www.docker.com/products/docker-desktop).
 - Run `yarn start` to set up WordPress locally.
-- Run `yarn dev` to start development.
-- Run `yarn build` to create a production distro.
+- Run `yarn stop` to stop the WordPress containers.
 - Access your WordPress at [localhost:8000](http://localhost:8000).
-- Access your Dev server at [localhost:3000](http://localhost:8000).
 - Activate the theme from the *Themes* section in the Admin Panel.
 
-### Setting up the Theme
-
-- Install dependancies - `npm install` or `yarn install`
-- Start **development** mode - `npm run dev` or `yarn dev`
-- Build a **production** distribution - `npm run build` or `yarn build`
+### Developing the Theme
+- Run `yarn install` to install dependancies
+- Run `yarn dev` to start the development server & watcher
+- Access your dev proxy server at [localhost:3000](http://localhost:3000).
+- Run `yarn build` to build a production theme distribution
 
 ## What's in the box?
 
