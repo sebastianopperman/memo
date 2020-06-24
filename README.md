@@ -2,17 +2,22 @@
 [![GitHub license](https://img.shields.io/github/license/codilation/wordpress-theme-boilerplate)](https://github.com/codiltion/wordpress-theme-boilerplate/blob/master/LICENSE)
 ![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/gutenberg)
 
-WordPress Theme Boilerplate is robust solution for developing a WordPress theme from the start. It uses Docker to set up WordPress so you will NOT need to setup a LAMP stack on your machine. It is also perfect for building with PostCSS and Webpack.
+Memo is a WordPress & React assessment task. To access the WordPress, use the following login:
+
+Username: **Memo**<br />
+Password: **Memo**
 
 ## How do I use it?
 
 ### Setting up WordPress
 
-- clone this repo - `git clone git@github.com:codilation/wordpress-theme-boilerplate.git`
-- Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- From the directory of the repo, run `docker-compose up -d` to set up WordPress locally
-- Access your WordPress at [localhost:8000](http://localhost:8000)
-- Activate the theme from the *Themes* section in the Admin Panel
+- Install [Docker](https://www.docker.com/products/docker-desktop).
+- Run `yarn start` to set up WordPress locally.
+- Run `yarn dev` to start development.
+- Run `yarn build` to create a production distro.
+- Access your WordPress at [localhost:8000](http://localhost:8000).
+- Access your Dev server at [localhost:3000](http://localhost:8000).
+- Activate the theme from the *Themes* section in the Admin Panel.
 
 ### Setting up the Theme
 
@@ -31,9 +36,6 @@ WordPress Theme Boilerplate is robust solution for developing a WordPress theme 
     - [Automatic icon fonts](https://www.npmjs.com/package/iconfont-webpack-plugin)
 - [BrowserSync](https://www.browsersync.io/)
 
-## Contributing
-
-We're always open to suggestions and improvements. You are welcome to submit a pull request or an issue on the project.
 
 ## License
 
