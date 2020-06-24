@@ -5,7 +5,7 @@
 
 Memo is a WordPress & React assessment task. To access the WordPress, use the following login:
 
-[WordPress Admin](http://178.62.107.86/wp-admin)<br />
+[WordPress Admin](http://memo.sebastianopperman.com/wp-admin)<br />
 Username: **memo**<br />
 Password: **memo**
 
