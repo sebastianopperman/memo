@@ -15,6 +15,7 @@ Password: **memo**
 
 - Install [Docker](https://www.docker.com/products/docker-desktop).
 - Run `yarn start` to set up WordPress locally.
+- Run `yarn start` to stop the WordPress containers.
 - Run `yarn dev` to start development.
 - Run `yarn build` to create a production distro.
 - Access your WordPress at [localhost:8000](http://localhost:8000).
