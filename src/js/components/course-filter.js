@@ -10,7 +10,7 @@ function filterCourses(status, list) {
 
 export function filterEvents() {
 	const filter = document.querySelector('.filter');
-	if(filter) {
+	if(filter && document.querySelector('.course')) {
 		const list = document.querySelector('.list').cloneNode(true);
 		if(filter.querySelector('ul')) {
 			filter.querySelectorAll('ul li').forEach(item => {
