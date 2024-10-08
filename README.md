@@ -1,6 +1,4 @@
 # WordPress & React Demo
-![Deploy](https://github.com/magn3tic/is3/workflows/Deploy/badge.svg)
-[![GitHub license](https://img.shields.io/github/license/codilation/wordpress-theme-boilerplate)](https://github.com/codiltion/wordpress-theme-boilerplate/blob/master/LICENSE)
 ![WordPress Plugin: Required WP Version](https://img.shields.io/wordpress/plugin/wp-version/gutenberg)
 
 Memo is a WordPress & React assessment task. To access the WordPress, use the following login:
